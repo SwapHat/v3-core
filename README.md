@@ -1,7 +1,7 @@
 # SwapHat V3
 
 This repository contains the core smart contracts for the SwapHat V3 Protocol.
-For higher level contracts, see the [swaphat-v3-periphery](https://github.com/swaphat/swaphat-v3-periphery)
+For higher level contracts, see the SwapHat [v3-periphery](https://github.com/swaphat/v3-periphery)
 repository.
 
 [![Lint](https://github.com/uniswap/uniswap-v3-core/actions/workflows/lint.yml/badge.svg)](https://github.com/uniswap/uniswap-v3-core/actions/workflows/lint.yml)
