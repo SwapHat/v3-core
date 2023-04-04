@@ -9,40 +9,49 @@ export default {
       allowUnlimitedContractSize: false,
     },
     mainnet: {
-      url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      url: `https://ethereum.rpc.thirdweb.com`,
     },
     ropsten: {
-      url: `https://ropsten.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      url: `https://ropsten.rpc.thirdweb.com`,
     },
     rinkeby: {
-      url: `https://rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      url: `https://rinkeby.rpc.thirdweb.com`,
     },
     goerli: {
-      url: `https://goerli.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      url: `https://goerli.rpc.thirdweb.com`,
     },
     kovan: {
-      url: `https://kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      url: `https://kovan.rpc.thirdweb.com`,
     },
-    arbitrumRinkeby: {
-      url: `https://arbitrum-rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`,
+    arbitrumGoerli: {
+      url: `https://arbitrum-goerli.rpc.thirdweb.com`,
     },
     arbitrum: {
-      url: `https://arbitrum-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      url: `https://arbitrum.rpc.thirdweb.com`,
     },
-    optimismKovan: {
-      url: `https://optimism-kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
+    optimismGoerli: {
+      url: `https://optimism-goerli.rpc.thirdweb.com`,
     },
     optimism: {
-      url: `https://optimism-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      url: `https://optimism.rpc.thirdweb.com`,
     },
     mumbai: {
-      url: `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      url: `https://mumbai.rpc.thirdweb.com`,
     },
     polygon: {
-      url: `https://polygon-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      url: `https://polygon.rpc.thirdweb.com`,
     },
     bnb: {
-      url: `https://bsc-dataseed.binance.org/`,
+      url: `https://binance.rpc.thirdweb.com`,
+    },
+    tbnb: {
+      url: `https://binance-testnet.rpc.thirdweb.com`,
+    },
+    avalanche: {
+      url: `https://avalanche.rpc.thirdweb.com`,
+    },
+    avalancheFuji: {
+      url: `https://avalanche-fuji.rpc.thirdweb.com`,
     },
   },
   etherscan: {
@@ -55,13 +64,13 @@ export default {
     settings: {
       optimizer: {
         enabled: true,
-        runs: 800,
+        runs: 500,
       },
       metadata: {
         // do not include the metadata hash, since this is machine dependent
         // and we want all generated code to be deterministic
         // https://docs.soliditylang.org/en/v0.7.6/metadata.html
-        bytecodeHash: 'none',
+        bytecodeHash: 'ipfs',
       },
     },
   },
