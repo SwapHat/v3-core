@@ -1,14 +1,15 @@
 # SwapHat V3
 
-[![Lint](https://github.com/swaphat/uniswap-v3-core/actions/workflows/lint.yml/badge.svg)](https://github.com/swaphat/uniswap-v3-core/actions/workflows/lint.yml)
-[![Tests](https://github.com/swaphat/uniswap-v3-core/actions/workflows/tests.yml/badge.svg)](https://github.com/swaphat/uniswap-v3-core/actions/workflows/tests.yml)
-[![Fuzz Testing](https://github.com/swaphat/uniswap-v3-core/actions/workflows/fuzz-testing.yml/badge.svg)](https://github.com/swaphat/uniswap-v3-core/actions/workflows/fuzz-testing.yml)
-[![Mythx](https://github.com/swaphat/uniswap-v3-core/actions/workflows/mythx.yml/badge.svg)](https://github.com/swaphat/uniswap-v3-core/actions/workflows/mythx.yml)
-[![npm version](https://img.shields.io/npm/v/@uniswap/v3-core/latest.svg)](https://www.npmjs.com/package/@uniswap/v3-core/v/latest)
-
 This repository contains the core smart contracts for the SwapHat V3 Protocol.
 For higher level contracts, see the [swaphat-v3-periphery](https://github.com/swaphat/uniswap-v3-periphery)
 repository.
+
+[![Lint](https://github.com/uniswap/uniswap-v3-core/actions/workflows/lint.yml/badge.svg)](https://github.com/uniswap/uniswap-v3-core/actions/workflows/lint.yml)
+[![Tests](https://github.com/uniswap/uniswap-v3-core/actions/workflows/tests.yml/badge.svg)](https://github.com/uniswap/uniswap-v3-core/actions/workflows/tests.yml)
+[![Fuzz Testing](https://github.com/uniswap/uniswap-v3-core/actions/workflows/fuzz-testing.yml/badge.svg)](https://github.com/uniswap/uniswap-v3-core/actions/workflows/fuzz-testing.yml)
+[![Mythx](https://github.com/uniswap/uniswap-v3-core/actions/workflows/mythx.yml/badge.svg)](https://github.com/uniswap/uniswap-v3-core/actions/workflows/mythx.yml)
+[![npm version](https://img.shields.io/npm/v/@uniswap/v3-core/latest.svg)](https://www.npmjs.com/package/@uniswap/v3-core/v/latest)
+
 
 ## Local deployment
 
