@@ -1,18 +1,14 @@
-# Uniswap V3
+# SwapHat V3
 
-[![Lint](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/lint.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/lint.yml)
-[![Tests](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/tests.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/tests.yml)
-[![Fuzz Testing](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/fuzz-testing.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/fuzz-testing.yml)
-[![Mythx](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/mythx.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/mythx.yml)
+[![Lint](https://github.com/swaphat/uniswap-v3-core/actions/workflows/lint.yml/badge.svg)](https://github.com/swaphat/uniswap-v3-core/actions/workflows/lint.yml)
+[![Tests](https://github.com/swaphat/uniswap-v3-core/actions/workflows/tests.yml/badge.svg)](https://github.com/swaphat/uniswap-v3-core/actions/workflows/tests.yml)
+[![Fuzz Testing](https://github.com/swaphat/uniswap-v3-core/actions/workflows/fuzz-testing.yml/badge.svg)](https://github.com/swaphat/uniswap-v3-core/actions/workflows/fuzz-testing.yml)
+[![Mythx](https://github.com/swaphat/uniswap-v3-core/actions/workflows/mythx.yml/badge.svg)](https://github.com/swaphat/uniswap-v3-core/actions/workflows/mythx.yml)
 [![npm version](https://img.shields.io/npm/v/@uniswap/v3-core/latest.svg)](https://www.npmjs.com/package/@uniswap/v3-core/v/latest)
 
-This repository contains the core smart contracts for the Uniswap V3 Protocol.
-For higher level contracts, see the [uniswap-v3-periphery](https://github.com/Uniswap/uniswap-v3-periphery)
+This repository contains the core smart contracts for the SwapHat V3 Protocol.
+For higher level contracts, see the [swaphat-v3-periphery](https://github.com/swaphat/uniswap-v3-periphery)
 repository.
-
-## Bug bounty
-
-This repository is subject to the Uniswap V3 bug bounty program, per the terms defined [here](./bug-bounty.md).
 
 ## Local deployment
 
@@ -37,7 +33,7 @@ your local deployment.
 
 ## Using solidity interfaces
 
-The Uniswap v3 interfaces are available for import into solidity smart contracts
+The SwapHat v3 interfaces are available for import into solidity smart contracts
 via the npm artifact `@uniswap/v3-core`, e.g.:
 
 ```solidity
@@ -55,12 +51,10 @@ contract MyContract {
 
 ## Licensing
 
-The primary license for Uniswap V3 Core is the Business Source License 1.1 (`BUSL-1.1`), see [`LICENSE`](./LICENSE). However, some files are dual licensed under `GPL-2.0-or-later`:
+The primary license for SwapHat V3 Core is the GNU General Public License 2.0-or-later, see [`LICENSE`](./LICENSE). However, some files are dual licensed under `MIT`:
 
-- All files in `contracts/interfaces/` may also be licensed under `GPL-2.0-or-later` (as indicated in their SPDX headers), see [`contracts/interfaces/LICENSE`](./contracts/interfaces/LICENSE)
-- Several files in `contracts/libraries/` may also be licensed under `GPL-2.0-or-later` (as indicated in their SPDX headers), see [`contracts/libraries/LICENSE`](contracts/libraries/LICENSE)
 
-### Other Exceptions
+### Exceptions
 
 - `contracts/libraries/FullMath.sol` is licensed under `MIT` (as indicated in its SPDX header), see [`contracts/libraries/LICENSE_MIT`](contracts/libraries/LICENSE_MIT)
 - All files in `contracts/test` remain unlicensed (as indicated in their SPDX headers).
