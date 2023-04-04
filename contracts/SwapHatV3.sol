@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity =0.7.6;
 
-import './interfaces/IUniswapV3Factory.sol';
+import './interfaces/ISwapHatV3Factory.sol';
 
-import './UniswapV3PoolDeployer.sol';
+import './SwapHatV3PoolDeployer.sol';
 import './NoDelegateCall.sol';
 
-import './UniswapV3Pool.sol';
+import './SwapHatV3Pool.sol';
 
 /// @title SwapHat V3 (factory)
 /// @notice Deploys SwapHat V3 pools and manages ownership and control over pool protocol fees
-contract SwapHatV3 is IUniswapV3Factory, UniswapV3PoolDeployer, NoDelegateCall {
-    /// @inheritdoc IUniswapV3Factory
+contract SwapHatV3 is ISwapHatV3Factory, SwapHatV3PoolDeployer, NoDelegateCall {
+    /// @inheritdoc ISwapHatV3Factory
     address public override owner;
 
-    /// @inheritdoc IUniswapV3Factory
+    /// @inheritdoc ISwapHatV3Factory
     mapping(uint24 => int24) public override feeAmountTickSpacing;
-    /// @inheritdoc IUniswapV3Factory
+    /// @inheritdoc ISwapHatV3Factory
     mapping(address => mapping(address => mapping(uint24 => address))) public override getPool;
 
     constructor() {
@@ -31,7 +31,7 @@ contract SwapHatV3 is IUniswapV3Factory, UniswapV3PoolDeployer, NoDelegateCall {
         emit FeeAmountEnabled(10000, 200);
     }
 
-    /// @inheritdoc IUniswapV3Factory
+    /// @inheritdoc ISwapHatV3Factory
     function createPool(
         address tokenA,
         address tokenB,
@@ -50,14 +50,14 @@ contract SwapHatV3 is IUniswapV3Factory, UniswapV3PoolDeployer, NoDelegateCall {
         emit PoolCreated(token0, token1, fee, tickSpacing, pool);
     }
 
-    /// @inheritdoc IUniswapV3Factory
+    /// @inheritdoc ISwapHatV3Factory
     function setOwner(address _owner) external override {
         require(msg.sender == owner);
         emit OwnerChanged(owner, _owner);
         owner = _owner;
     }
 
-    /// @inheritdoc IUniswapV3Factory
+    /// @inheritdoc ISwapHatV3Factory
     function enableFeeAmount(uint24 fee, int24 tickSpacing) public override {
         require(msg.sender == owner);
         require(fee < 1000000);
