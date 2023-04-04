@@ -14,7 +14,7 @@ Some of the key features of SwapHat V3 are:
 
 ## How to Use
 
-To use SwapHat V3, you will need an Ethereum wallet such as MetaMask or WalletConnect. If you are using the Brave browser it youe wallet is built in! You can then navigate to the SwapHat V3 website and connect your wallet. Once connected, you can choose a trading pair and select a price range to trade within.
+To use SwapHat V3, you will need an Ethereum wallet such as MetaMask or WalletConnect. If you are using the Brave browser your wallet is built in! You can then navigate to the SwapHat V3 website and connect your wallet. Once connected, you can choose a trading pair and select a price range to trade within.
 
 The three fee tiers and their corresponding uint24 values in SwapHat v3 are:
 
@@ -28,7 +28,7 @@ SwapHat V3 is built using Solidity, the programming language used for smart cont
 
 ## Community
 
-SwapHat V3 has a thriving community of developers, traders, and liquidity providers. You can join the discussion on the SwapHat Discord server or follow the project on Twitter.
+Tech Enterprises has a thriving community of developers, traders, and liquidity providers. You can join the discussion on the Tech Enterprises Discord server or follow the project on Twitter.
 
 ## Conclusion
 
